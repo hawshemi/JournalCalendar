@@ -92,29 +92,29 @@ File structure:
         - `js` 
           - `alerts.js`: Decides if an alert should disappear automatically.
           - `board.js`: Draws a calendar-like, current month's activity board on the index page.
-          - `getEntries.js`: Contains the functions that retrieve journal entries from the backend and displays them.
+          - `getEntries.js`: Contains the functions that retrieve journal entries from the backend and display them.
           - `monthYearFilter.js`: Creates filter elements and displays them on a page where all entries are listed.
-          - `script.js`: Looks for click events, acts accordingly.
+          - `script.js`: Looks for click events, and acts accordingly.
           - `theme.js`: Sets theme according to user's choice.
       - `templates/journal`: Contains the HTML templates for rendering the web pages.
-      - `admin.py`: Defines which models will be displayed in Django Admin Panel.
+      - `admin.py`: Defines which models will be displayed in the Django Admin Panel.
       - `apps.py`
-      - `forms.py`: Containes Django forms used for creating and updating entries and tags.
+      - `forms.py`: Contains Django forms used for creating and updating entries and tags.
       - `models.py`: Defines the database models.
       - `test.py`
       - `urls.py`: Specifies the URL patterns and their corresponding views.
       - `utils.py`: Contains helper function used in the app.
-      - `views.py`: Contains the view functions that handle different HTTP request.
+      - `views.py`: Contains the view functions that handle different HTTP requests.
     - `main`: Project's main directory.
       - `asgi.py`
       - `settings.py`: project's and text editor's configuration file.
-      - `urls.py`: Specifies the URL patterns and their corresponding views for project.
+      - `urls.py`: Specifies the URL patterns and their corresponding views for the project.
       - `wsgi.py`
     - `.env`: Contains private information such as `SECRET_KEY` and `ENV_NAME`.
     - `.gitignore`: Defines the files to be ignored by Git.
     - `db.sqlite3`: Database used during the development phase.
     - `manage.py`
-    - `README.md`: Contains project's description and instructions.
+    - `README.md`: Contains the project's description and instructions.
     - `requirements.txt`: Lists all the Python packages that need to be installed to run the app.
   
 
@@ -156,6 +156,6 @@ To run the **Journal** locally, follow these steps:
 
 
 ## Contact
-I'm [Hawshemi](https://hawshemi.com). You could reach me at rhawshemi@gmail.com
+I'm [Hawshemi](https://hawshemi.com). You can reach me at rhawshemi@gmail.com
 
 [Go Top ➚](#journal)
