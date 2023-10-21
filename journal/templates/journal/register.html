@@ -1,0 +1,42 @@
+{% extends "journal/layout.html" %}
+
+{% block body %}
+    <div class="container d-grid col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 mt-2 mx-auto text-center">
+
+    <h2 class="display-4 mb-3">Register</h2>
+
+    <form action="{% url 'register' %}" method="post">
+        {% csrf_token %}
+        <div class="form-floating mb-3">
+            {% if username %}
+            <input class="form-control" type="text" name="username" placeholder="Username" value="{{ username }}" required>
+            {% else %}
+            <input class="form-control" autofocus type="text" name="username" placeholder="Username" required>
+            {% endif %}
+            <label>Username</label>
+        </div>
+        <div class="form-floating mb-3">
+            {% if email %}
+            <input class="form-control" type="email" name="email" placeholder="Email Address" value="{{ email }}" required>
+            {% else %}
+            <input class="form-control" type="email" name="email" placeholder="Email Address" required>
+            {% endif %}
+            <label>Email</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input autocomplete="new-password" class="form-control" type="password" minlength="8" name="password" placeholder="Password" required>
+            <label>Password</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input autocomplete="new-password" class="form-control" type="password" name="confirmation" placeholder="Confirm Password" required>
+            <label>Confirm password</label>
+        </div>
+        <div class="d-grid gap-2 col-12 mx-auto mb-3">
+            <input class="btn btn-primary" type="submit" value="Register">
+        </div>
+    </form>
+
+    <p>Already have an account? <a href="{% url 'login' %}">Log In here ➚</a></p>
+
+    </div>
+{% endblock %}

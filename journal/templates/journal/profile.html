@@ -1,0 +1,38 @@
+{% extends 'journal/layout.html' %}
+
+{% block body %}
+
+<div class="container d-grid col-12 col-lg-6 mt-2 mx-auto">
+    <div class="border rounded-2 pt-3 px-2 my-3">
+        <table class="table table-striped" id="profileTable">
+            <tr>
+                <td>Username</td>
+                <td>{{ user.username }}</td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><a class="link-offset-2 link-underline" href="{% url 'change_password' %}">Change Password</a></td>
+            </tr>
+            {% if user.email  %}
+            <tr>
+                <td>Email</td>
+                <td>{{ user.email }}</td>
+            </tr>
+            {% endif %}
+            <tr>
+                <td>Member since</td>
+                <td>{{ user.date_joined|date }}</td>
+            </tr>
+            <tr>
+                <td>Total number of entries</td>
+                <td>{{ entry_count }}</td>
+            </tr>
+            <tr>
+                <td>Longest journaling streak</td>
+                <td>{{ longest_streak }} {% if longest_streak < 2 %}day{% else %}days{% endif %}</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

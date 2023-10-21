@@ -1,0 +1,28 @@
+{% extends "journal/layout.html" %}
+
+{% block body %}
+
+<div class="container d-grid col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 mt-2 mx-auto text-center">
+
+    <h2 class="display-4 mb-3">Login</h2>
+    
+    <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+            <div class="form-floating mb-3">
+                <input autofocus class="form-control" type="text" name="username" placeholder="Username" required>
+                <label>Username</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input class="form-control" type="password" name="password" placeholder="Password" required>
+                <label>Password</label>
+            </div>
+            <input type="hidden" name="next" value="{{ request.GET.next }}">
+            <div class="d-grid gap-2 col-12 mx-auto mb-3">
+                <input class="btn btn-primary" type="submit" value="Login">
+            </div>
+        </form>
+        
+        <p>Don't have an account? <a href="{% url 'register' %}">Register here ➚</a></p> 
+</div>
+
+{% endblock %}

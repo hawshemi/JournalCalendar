@@ -1,0 +1,116 @@
+#activityBoard tbody td:hover {
+    opacity: 0.75;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+#activityBoard {
+    border-collapse: separate;
+    border-spacing: 6px;
+    border: 1px solid #ddd;
+}
+
+
+#activityBoard td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    width: 36px;
+    border-radius: 5px;
+    padding: 0;
+}
+
+#activityBoard > tbody td {
+    background-color: #eee;
+    font-size: small;
+    color: #339a
+}
+
+#boardDiv {
+    height: 380px;
+}
+
+#boardHead td {
+    background-color: none;
+}
+
+#boardLabelDiv {
+    width: 322px;
+    margin: 0.6rem auto .3rem;
+}
+
+#boardLabel {
+    letter-spacing: 2px;
+    color: #fd3d38;
+}
+
+#profileTable tr {
+    line-height: 34px;
+}
+
+#profileTable tr > td:first-child {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-item.dropdown {
+    list-style-type: none;
+}
+
+
+.line-clamp {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0 !important;
+    line-height: var(--line-height,1.5) !important;
+}
+
+
+.line-clamp-3 {
+	-webkit-line-clamp : 3;
+	height: calc(1em * var(--line-height, 1.5) * 3);
+}
+
+
+.footer {
+    margin-top: 4rem;
+    text-align: center;
+}
+
+
+@media (max-width: 375px) {
+    #activityBoard td {
+        width: calc(10vw);
+        height: calc(10vw);
+    }
+
+    #boardLabelDiv {
+        width: 90vw;
+    }
+}
+
+@keyframes hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}

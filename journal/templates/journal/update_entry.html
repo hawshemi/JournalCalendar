@@ -1,0 +1,22 @@
+{% extends 'journal/layout.html' %}
+
+{% block body %}
+  <div class="container d-grid col-12 col-lg-6 mt-2 mx-auto text-center">
+    <h2 class="display-4">Update Entry</h2>
+    <form action="" method="post">
+      {% csrf_token %}
+      <div class="form-floating mb-3">{{ form.date }}
+        {{ form.date.label_tag }}</div>
+      <div class="form-floating mb-3">{{ form.content }}</div>
+      <div class="form-floating mb-3">{{ form.tags }}
+        {{ form.tags.label_tag }}</div>
+      <div class="d-grid gap-2 col-12 mx-auto mb-3">
+        <input class="btn btn-primary rounded-2 shadow-sm" type="submit" value="Save" />
+      </div>
+    </form>
+  </div>
+{% endblock %}
+
+{% block script %}
+  {{ form.media }}
+{% endblock %}
