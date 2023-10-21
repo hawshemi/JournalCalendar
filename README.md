@@ -124,17 +124,24 @@ To run the **Journal** locally, follow these steps:
 1. Install Python.
 2. Clone the project repository.
 3. Open a terminal and navigate to the project's main directory.
-4. Create a virtual environment (optional but recommended) and activate it.
-5. Install the required Python packages by running the following command:
+4. Create a file named `.env` and edit the file and enter these two lines:
+    ```
+    SECRET_KEY=''
+    ENV_NAME=''
+    ```
+    _You can generate a test secret key [here](https://djecrety.ir/)._
+
+5. Create a virtual environment (optional but recommended) and activate it.
+6. Install the required Python packages by running the following command:
     ```
     pip install -r requirements.txt
     ```
-6. Start the development server:
+7. Start the development server:
     ```
     python manage.py runserver
     ```
-7. Access the app by visiting `http://localhost:8000` in a web browser of your choice.
-8. Create a new account, and start using **Journal**.
+8. Access the app by visiting `http://localhost:8000` in a web browser of your choice.
+9. Create a new account, and start using **Journal**.
 
 
 ## Languages & Tools
