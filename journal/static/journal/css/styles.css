@@ -2,14 +2,16 @@
     opacity: 0.75;
 }
 
+
 p {
     margin-bottom: 0;
 }
 
+
 #activityBoard {
     border-collapse: separate;
-    border-spacing: 6px;
-    border: 1px solid #ddd;
+    border-spacing: 8px;
+    border: 1px solid silver;
 }
 
 
@@ -17,44 +19,40 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 36px;
-    width: 36px;
-    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
     padding: 0;
 }
 
+
 #activityBoard > tbody td {
     background-color: #eee;
-    font-size: small;
-    color: #339a
+    color: gray;
 }
 
-#boardDiv {
-    height: 380px;
-}
-
-#boardHead td {
-    background-color: none;
-}
 
 #boardLabelDiv {
-    width: 322px;
-    margin: 0.6rem auto .3rem;
+    width: 377px;
+    margin: 1rem auto;
 }
 
+
 #boardLabel {
-    letter-spacing: 2px;
-    color: #fd3d38;
+    letter-spacing: 4px;
+    color: red;
 }
 
 #profileTable tr {
     line-height: 34px;
 }
 
+
 #profileTable tr > td:first-child {
     font-size: 14px;
     font-weight: 500;
 }
+
 
 .nav-item.dropdown {
     list-style-type: none;
@@ -84,7 +82,13 @@ p {
 }
 
 
-@media (max-width: 375px) {
+.navbar {
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+
+@media (max-width: 377px) {
     #activityBoard td {
         width: calc(10vw);
         height: calc(10vw);
@@ -94,6 +98,7 @@ p {
         width: 90vw;
     }
 }
+
 
 @keyframes hide {
     0% {
@@ -105,12 +110,13 @@ p {
     }
 }
 
+
 @keyframes show {
     0% {
         opacity: 0;
     }
 
     100% {
-        opacity: 100;
+        opacity: 1;
     }
 }
