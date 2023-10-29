@@ -24,7 +24,7 @@ This web application was developed  as a [final project](https://cs50.harvard.ed
 ## Demo
 Watch demo: [YouTube](https://youtu.be/)
 
-Live: [Replit](https://journal.hawshemi.repl.co)
+Live: [Replit](https://journalcalendar.hawshemi.repl.co)
 
 
 ## Distinctiveness and Complexity
