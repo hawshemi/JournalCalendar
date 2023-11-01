@@ -108,7 +108,7 @@ const displayDaysEntry = (entry, date) => {
         // Message
         const noEntryParEl = document.createElement("p")
         noEntryParEl.className = "lead my-0"
-        noEntryParEl.textContent = "No entry to show."
+        noEntryParEl.textContent = "No entries to show."
         // Button
         // const newEntryBtnDiv = document.createElement("div")
         // newEntryBtnDiv.className = "d-grid gap-2 col-12 mx-auto mb-3"
