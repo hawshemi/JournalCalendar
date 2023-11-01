@@ -1,9 +1,9 @@
-# Journal
+# Journal Calendar
 
 
 ## Table Of Contents
 
-- [Journal](#journal)
+- [Journal Calendar](#journal)
   - [Table Of Contents](#table-of-contents)
   - [Description](#description)
   - [Demo](#demo)
@@ -141,7 +141,7 @@ To run the **Journal** locally, follow these steps:
     python manage.py runserver
     ```
 8. Access the app by visiting `http://localhost:8000` in a web browser of your choice.
-9. Create a new account, and start using **Journal**.
+9. Create a new account, and start using **Journal Calendar**.
 
 
 ## Languages & Tools
