@@ -1,3 +1,7 @@
+* {
+    font-family: Lato, sans-serif;
+}
+
 #activityBoard tbody td:hover {
     opacity: 0.75;
 }
@@ -7,6 +11,11 @@ p {
     margin-bottom: 0;
 }
 
+.display-4 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 
 #activityBoard {
     border-collapse: separate;
