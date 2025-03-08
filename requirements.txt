@@ -4,3 +4,4 @@ django-tinymce==3.6.1
 python-decouple==3.8
 sqlparse==0.4.4
 gunicorn==22.0.0
+whitenoise==6.9.0
