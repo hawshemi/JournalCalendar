@@ -3,3 +3,4 @@ Django==4.2.6
 django-tinymce==3.6.1
 python-decouple==3.8
 sqlparse==0.4.4
+gunicorn==23.0.0
