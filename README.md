@@ -22,7 +22,7 @@ This web application was developed  as a [final project](https://cs50.harvard.ed
 
 
 ## Demo
-Not Available
+https://journalcalendar.up.railway.app
 
 
 ## Distinctiveness and Complexity
